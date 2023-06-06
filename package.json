@@ -1,12 +1,9 @@
 {
   "name": "gerador-de-senha",
   "private": true,
-  "homepage": "https://github.com/MarkoneDias/Password-Generator.git",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "npx gh-pages -d dist -r https://github.com/MarkoneDias/Password-Generator.git",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
