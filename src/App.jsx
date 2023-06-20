@@ -41,7 +41,9 @@ export default function App() {
       <h1>Gerador de senha</h1>
       <Form />
       <Message msg={message} type={type} />
-      <input type="text" ref={passwordText} value={password} readOnly />
+      <div>
+        <p>{password}</p>
+      </div>
       <div className={style.divButton}>
         <button onClick={generatePasswordLocal}>Gerar</button>
         <button onClick={copyPassword}>{copyBtn}</button>

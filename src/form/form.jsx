@@ -7,7 +7,7 @@ export function getNumberPassword() {
 }
 
 export default function Form() {
-  const [number, setNumber] = useState("");
+  const [number, setNumber] = useState(12);
 
   numberPassword = number;
 
@@ -17,7 +17,7 @@ export default function Form() {
 
   return (
     <form>
-      <h3>Número de caracteres acima de 6</h3>
+      <h3>Número de caracteres</h3>
       <input type="number" onChange={handleNumber} />
     </form>
   );
