@@ -4,6 +4,35 @@ h3 {
   color: rgb(63, 63, 63);
 }
 
-input {
+.input {
   border-radius: 0.5rem;
+  border: none;
+  padding: 1rem;
+
+  background: #ffffff;
+  transition: 0.3s;
+}
+.input:focus {
+  outline-color: #ffffff;
+  background: #ffffff;
+  box-shadow: inset 20px 20px 60px #c5c5c5, inset -20px -20px 60px #ffffff;
+  transition: 0.3s;
+  border-radius: 1rem;
+}
+
+.showInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.showCheckBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.showInput .showEditBtn {
+  width: 1rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
 }
